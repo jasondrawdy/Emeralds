@@ -10,11 +10,11 @@ build:
   tools:
     python: "3.11"
   jobs:
-  pre_create_environment:
-    - echo "Initializing creation of build environment..."
-  post_build:
-    - echo "Documentation has been successfully built!"
-    - echo `date`
+      pre_create_environment:
+        - echo "Initializing creation of build environment..."
+      post_build:
+        - echo "Documentation has been successfully built!"
+        - echo `date`
 
 # Build documentation in the "docs/" directory with Sphinx.
 sphinx:
