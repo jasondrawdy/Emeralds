@@ -41,7 +41,7 @@ class Setup:
             long_description_content_type="text/markdown",
             long_description=self.long_description,
             packages=find_packages(),
-            extras_require={'dev': ['sphinx-rtd-theme']},
+            extras_require={'dev': ['sphinx-rtd-theme', 'sphinx-autoapi']},
             keywords=['emeralds', 'test', 'package'],
             classifiers=[
                 "Development Status :: 1 - Planning",
