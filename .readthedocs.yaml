@@ -11,8 +11,9 @@ build:
     python: "3.11"
   commands:
     - mv docs/_build/autoapi/ html
-    - mv html/ $READTHEDOCS_OUTPUT
-    - ls -al $READTHEDOCS_OUTPUThtml
+    - mv html/ _readthedocs/html
+    - ls -al
+    - ls -al _readthedocs
 
 # Build documentation in the "docs/" directory with Sphinx.
 sphinx:
