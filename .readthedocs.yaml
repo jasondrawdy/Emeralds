@@ -12,10 +12,10 @@ build:
   commands:
     - mv docs/_build/autoapi/ html
     - ls -al
-    - mkdir _readthedocs
     - mkdir _readthedocs/html
     - mv html/ _readthedocs/html/
     - ls -al _readthedocs
+    - ls -al /
 
 # Build documentation in the "docs/" directory with Sphinx.
 sphinx:
