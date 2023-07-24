@@ -12,6 +12,7 @@ build:
   commands:
     - pip install -r requirements.txt
     - cd docs/
+    - ls -al
     - sphinx-build -b html . _build
     - rm -r $READTHEDOCS_OUTPUT/html
     - cp -r _build/autoapi $READTHEDOCS_OUTPUT/html
