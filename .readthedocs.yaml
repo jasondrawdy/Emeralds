@@ -11,7 +11,7 @@ build:
     python: "3.11"
   commands:
     - ls -al ..
-    - ls -al /home/docs/checkouts/
+    - ls -al /home/docs/checkouts/readthedocs.org/
     - mv docs/_build/autoapi/ html
     - ls -al
     - mkdir _readthedocs
