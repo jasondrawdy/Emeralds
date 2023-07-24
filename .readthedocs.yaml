@@ -10,6 +10,7 @@ build:
   tools:
     python: "3.11"
   commands:
+    - apt-get install python3-sphinx
     - cd docs/
     - sphinx-build -b html . _build
     - rm -r $READTHEDOCS_OUTPUT/html
