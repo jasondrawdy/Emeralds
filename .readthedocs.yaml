@@ -10,14 +10,8 @@ build:
   tools:
     python: "3.11"
   commands:
-    - ls -al ..
-    - ls -al /home/docs/checkouts/readthedocs.org/user_builds/emeralds/checkouts/latest/
-    - mv docs/_build/autoapi/ html
-    - ls -al
-    - mkdir _readthedocs
-    - mkdir _readthedocs/html
-    - mv html/ _readthedocs/html/
-    - ls -al _readthedocs
+    - mkdir --parents _readthedocs/html/
+    - cp --recursive docs/_build/autoapi/* _readthedocs/html/
 
 # Build documentation in the "docs/" directory with Sphinx.
 sphinx:
