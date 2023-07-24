@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Module Contents &mdash; Emeralds 0.0.1 documentation</title>
@@ -12,10 +12,11 @@
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -28,34 +29,34 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> Emeralds
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Emeralds
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">API Reference</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Submodules</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Module Contents</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#classes">Classes</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../tools/index.html">Submodules</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">API Reference</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Cryptography</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">checksums</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#classes">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cryptography.checksums.Hasher"><code class="docutils literal notranslate"><span class="pre">Hasher</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cryptography.checksums.Hasher.get_file_checksum"><code class="docutils literal notranslate"><span class="pre">Hasher.get_file_checksum()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -78,7 +79,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../index.html">API Reference</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Submodules</a></li>
       <li class="breadcrumb-item active">Module Contents</li>
@@ -93,14 +94,10 @@
   <p><a class="reference internal" href="#module-cryptography.checksums" title="cryptography.checksums"><code class="xref py py-mod docutils literal notranslate"><span class="pre">cryptography.checksums</span></code></a></p>
 <hr class="docutils" />
 <span class="target" id="module-cryptography.checksums"></span><section id="module-contents">
-<h1>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline"></a></h1>
+<h1>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this heading"></a></h1>
 <section id="classes">
-<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline"></a></h2>
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this heading"></a></h2>
 <table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#cryptography.checksums.Hasher" title="cryptography.checksums.Hasher"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hasher</span></code></a></p></td>
 <td><p>Allows checksum generation of binary data either from a file or message.</p></td>
@@ -113,20 +110,20 @@
 <dd><p>Allows checksum generation of binary data either from a file or message.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="cryptography.checksums.Hasher.get_file_checksum">
-<span class="sig-name descname"><span class="pre">get_file_checksum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">block</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span> <span class="pre">**</span> <span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cryptography.checksums.Hasher.get_file_checksum" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_file_checksum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">block</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2**20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cryptography.checksums.Hasher.get_file_checksum" title="Permalink to this definition"></a></dt>
 <dd><p><code class="docutils literal notranslate"><span class="pre">|coro|</span></code></p>
 <p>Generates a calculated <code class="docutils literal notranslate"><span class="pre">SHA512</span></code> hash for a given file.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – The name of the file to generate the checksum for.</p></li>
 <li><p><strong>block</strong> (Optional[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) – Chunk size to read and hash the file in bytes. Default is <code class="docutils literal notranslate"><span class="pre">2^20</span></code>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The calculated <code class="docutils literal notranslate"><span class="pre">SHA512</span></code> hash of the file, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if there was an error generating the checksum.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
 </dd>
 </dl>
