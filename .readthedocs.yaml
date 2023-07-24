@@ -10,6 +10,7 @@ build:
   tools:
     python: "3.11"
   commands:
+    - mv -a docs/_build/autoapi/ $READTHEDOCS_OUTPUThtml/
     - ls -al $READTHEDOCS_OUTPUThtml
 
 # Build documentation in the "docs/" directory with Sphinx.
