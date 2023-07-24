@@ -11,7 +11,7 @@ build:
     python: "3.11"
   commands:
     - mv docs/_build/autoapi/ html
-    - mv html/ _readthedocs/html
+    - mv html/ _readthedocs/
     - ls -al
     - ls -al _readthedocs
 
