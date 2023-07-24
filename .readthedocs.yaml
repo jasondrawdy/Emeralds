@@ -11,10 +11,8 @@ build:
     python: "3.11"
   commands:
     - pip install -r requirements.txt
-    - cd docs/
     - ls -al
-    - cd docs
-    - sphinx-build -b html . _build
+    - sphinx-build -c docs -b html . _build
     - rm -r $READTHEDOCS_OUTPUT/html
     - cp -r _build/autoapi $READTHEDOCS_OUTPUT/html
 
