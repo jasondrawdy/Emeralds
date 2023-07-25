@@ -11,6 +11,7 @@ build:
     python: "3.11"
   commands:
     - mkdir --parents _readthedocs/html/
+    - mv docs/_static _readthedocs/_static
     - cp --recursive docs/_build/autoapi/* _readthedocs/html/
 
 # Build documentation in the "docs/" directory with Sphinx.
